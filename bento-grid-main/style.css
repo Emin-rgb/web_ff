@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'DMSansR';
+    src: url('./assets/fonts/DMSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSansM';
+    src: url('./assets/fonts/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSansI';
+    src: url('./assets/fonts/DMSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.container {
+    padding-left:200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(207, 214, 214);
+    justify-content: center;
+    
+}
+
+
+.div1 {
+    background-color:rgb(250, 230, 200);
+    width:  170px;
+    height: 280px;
+    border-radius: 3%; 
+    margin-right: 30px;
+    font-size: 23px;
+    padding:30px 20px;
+    
+}
+.div1 p {
+    font-family: 'DMSansM', sans-serif;
+}
+
+.highlight {
+    font-style: italic;
+    color: purple;
+}
+
+
+.div2 {
+    background-color: rgb(88, 88, 187);
+    width: 370px;
+    height: 220px;
+    border-radius: 3%; 
+    margin-right: 30px;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+
+}
+.div2 p{
+
+    font-family: 'DMSansM', sans-serif;
+    color: white;
+
+}
+
+.div3 {
+    background-color: rgb(230, 211, 247);
+    width: 200px;
+    height: 450px;
+    border-radius: 3%; 
+    padding: 20px 25px;
+
+}
+
+.div3 p {
+    font-family: 'DMSansM', sans-serif;
+    font-size: 25px;
+    
+}
+
+.div4 {
+    background-color:rgb(255, 186, 82);
+    width:  170px;
+    height: 280px;
+    border-radius: 3%; 
+    margin-right: 30px;
+    font-size: 23px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -120px;
+
+
+}     
+
+.div4 p {
+    font-family: 'DMSansM', sans-serif;
+    font-size: 27px;
+
+}
+
+.div5 {
+    background-color:white;
+    width: 150px;
+    height: 180px;
+    border-radius: 3%; 
+    padding: 20px 25px;
+    margin-top: -180px;
+    margin-right: 20px;
+
+}
+
+.div5 p {
+    font-family: 'DMSansM', sans-serif;
+    font-size: 20px;
+
+}
+
+.div6 {
+    background-color: rgb(255, 206, 116);
+    width: 150px;
+    height: 180px;
+    border-radius: 3%; 
+    padding: 20px 25px;
+    margin-top: -180px;
+    overflow: hidden;
+}
+
+.div6 p {
+    font-family: 'DMSansM', sans-serif;
+    font-size: 20px;
+}
+
+.div7 {
+    background-color:white;
+    width: 150px;
+    height: 190px;
+    border-radius: 3%; 
+    margin-top: 50px;
+    margin-left: -420px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+}
+
+.div7 p {
+    font-family: 'DMSansM', sans-serif;
+    font-size: 40px;
+}
+
+.div8 {
+    background-color:rgb(81, 52, 245);
+    width: 430px;
+    height: 190px;
+    border-radius: 3%; 
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    
+}
+
+.div8 p {
+    display: flex;
+    font-size: 30px;
+    font-family: 'DMSansM', sans-serif;
+    text-align: center;
+    color: white;  
+}
+
+.div8 img {
+    width: 170px;
+}
+
+div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block; 
+    border-radius: 8px;
+  }
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 18px;
+        padding-left: 0;
+        width: 100vw;
+    }
+
+    div img {
+        height: auto; 
+        border-radius: 8px; 
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 20px;
+        overflow:hidden
+ 
+    }
+
+    .div1 p, .div2 p, .div3 p, .div4 p, .div5 p, .div6 p, .div7 p, .div8 p {
+        font-size: 20px;
+    }
+
+    .div4 img {
+        margin-bottom: 30px;
+    }
+
+    img {
+        max-width: 55%;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    .container  div {
+        margin: 20px;
+        width: 100%;
+  
+      }
+
+}
+
+@media ( min-width:768px) and (max-width: 1176px) {
+   .container {  
+    display: grid;
+    grid-template-columns:  3fr 5fr ;
+    column-gap: 50px;
+    
+
+
+   }
+
+   .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+    width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    gap: 80px;
+
+}
+img {
+    max-width: 60%;
+
+    height: auto;
+    margin-left: 30px;
+}
+
+}
